@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1001988136913",
+    "project_id": "signup-login-firebase-e5160",
+    "storage_bucket": "signup-login-firebase-e5160.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001988136913:android:2b3d1184a301876cf88af0",
+        "android_client_info": {
+          "package_name": "com.example.paytrack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1001988136913-785mmu76el28gmu9pl30v3nt6ifpreen.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArmVfZylanEm1k9jQKWBG6Ems0TA6vb1k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1001988136913-785mmu76el28gmu9pl30v3nt6ifpreen.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
