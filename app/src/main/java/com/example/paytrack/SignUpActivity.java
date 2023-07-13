@@ -5,9 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -23,6 +26,20 @@ public class SignUpActivity extends AppCompatActivity {
     private Button signupButton;
     private TextView loginRedirectText;
 
+    private ImageButton passwordVisibilityButton;
+
+    private void togglePasswordVisibility() {
+        if (signupPassword.getTransformationMethod() instanceof PasswordTransformationMethod) {
+            signupPassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance()); // Reveal password
+        } else {
+            signupPassword.setTransformationMethod(PasswordTransformationMethod.getInstance()); // Hide password
+        }
+
+        // Move the cursor to the end of the text for a better user experience
+        signupPassword.setSelection(signupPassword.getText().length());
+    }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,12 +50,17 @@ public class SignUpActivity extends AppCompatActivity {
         signupPassword = findViewById(R.id.signup_password);
         signupButton = findViewById(R.id.signup_button);
         loginRedirectText = findViewById(R.id.loginRedirectText);
+        passwordVisibilityButton = findViewById(R.id.passwordVisibilityButton);
+
+
+        signupPassword.setTransformationMethod(new PasswordTransformationMethod());
 
         signupButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String user = signupEmail.getText().toString().trim();
                 String pass = signupPassword.getText().toString().trim();
+
 
                 if (user.isEmpty()){
                     signupEmail.setError("Email cannot be empty");
@@ -58,8 +80,16 @@ public class SignUpActivity extends AppCompatActivity {
                             }
                         }
                     });
+
                 }
 
+            }
+        });
+
+        passwordVisibilityButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                togglePasswordVisibility();
             }
         });
 

@@ -46,6 +46,11 @@
                 android:drawablePadding="8dp"
                 android:textColor="@color/black"/>
 
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -53,10 +58,25 @@
                 android:background="@drawable/custom_edittext"
                 android:layout_marginTop="20dp"
                 android:padding="8dp"
+
+                android:inputType="textPassword"
+
                 android:hint="Password"
                 android:drawableLeft="@drawable/baseline_lock_24"
                 android:drawablePadding="8dp"
                 android:textColor="@color/black"/>
+
+            <ImageButton
+                android:id="@+id/passwordVisibilityButton"
+                android:layout_width="48dp"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:contentDescription="@drawable/baseline_remove_red_eye_24"
+                android:src="@drawable/baseline_remove_red_eye_24"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@id/login_password" />
+            </RelativeLayout>
+
 
             <Button
                 android:layout_width="match_parent"
