@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">PayTrack</string>
+    <string name="empty_email_err">Email cannot be empty!</string>
+    <string name="empty_pass_err">Password cannot be empty!</string>
+    <string name="empty_username_err">Username cannot be empty!</string>
+    <string name="short_pass_err">At least 8 characters!</string>
+    <string name="invalid_email_err">Please enter valid email!</string>
+    <string name="must_be_filled">Must be filled!</string>
+    <string name="pass_match_err">Passwords do not match!</string>
+    <string name="pay_track_logo">Pay Track logo</string>
+    <string name="sign_in">Sign in</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="change_password_visibility">Change password visibility</string>
+    <string name="don_t_have_account_sign_up">Don\'t have account? Sign up</string>
+    <string name="login_screen">Login screen</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="name">Name</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="already_have_an_account_sign_in">Already have an account? Sign in</string>
+    <string name="change_confirm_password_visibility">Change confirm password visbility</string>
+    <string name="sign_up_form">Sign up form</string>
 </resources>

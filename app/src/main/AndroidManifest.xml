@@ -12,10 +12,10 @@
         android:theme="@style/Theme.PayTrack"
         tools:targetApi="31">
         <activity
-            android:name=".LoginActivity"
+            android:name=".SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".SignUpActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
